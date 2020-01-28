@@ -135,6 +135,11 @@ function json.encode(val)
   return ( encode(val) )
 end
 
+function json.tab2json(val)
+  return ( encode(val) )
+end
+
+
 
 -------------------------------------------------------------------------------
 -- Decode
@@ -396,5 +401,8 @@ function json.decode(str)
   return res
 end
 
+function json.json2tab(str)
+	return json.decode(str)
+end
 
 return json
